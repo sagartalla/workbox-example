@@ -1,0 +1,51 @@
+
+<!-- saved from url=(0441)https://mu-pl.lemnisk.co/analyze/analyze.php?account_id=VIZVRM5982&URL=https%3A%2F%2Fwww.acko.com%2F&referrer=&ts=&fp34=e660e27a3cd6f465119347ab02728beca0f00242e64889316e13bae57559a18e&param=e100&section=1&level=1&page=home&pname=home-page&device=DESKTOP&trackerid=JbtvTJV1t7gPuKdjtyUpow&acko_visit=wVNyhKa-OpBjQ1N8J5vR8g&_vwo_uuid_v2=D4C38DBCEC9136C56B5C74DB3F8285F7D%7Cbfe4c1ef51bcd1c2a21df654a985cedc&usertype=NewUser&cb=viz_5da58dad5a137 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body onload="timeLoadImage();">
+		<div id="imageContainer"><img src="./vizury" width="1" height="1"></div>
+        <div id="logContainer"></div>
+		<script language="javascript" type="text/javascript">
+      
+			var beforeLoad = Math.round((new Date()).getTime());
+			var isLoadCalled = false;
+      		var csm = 5;
+      		var isFP = true;
+			
+			var doLog = false;
+ 			
+     		var loggerPixel = "<img src = 'https://mu-pl.lemnisk.co/analyze/log.php?account_id=VIZVRM5982&tpcns=viz_5da58dad5a137"; // width=1 height=1 />      		
+			
+			function isCookieSet(){
+				var bool = false;
+			        var cookie=document.cookie;
+			        uid  = cookie.split('=');
+			        if(uid[1] !== undefined){ // check if the cookie is set
+			                bool = true;
+			        }
+			        return bool;
+			}
+			var varCookieSet = isCookieSet();
+			var cookiePresent = 'true';
+			var pixelContent = '<img src="https://sync.sharethis.com/vizury?uid=viz_5da58dad5a137" width=1 height=1 />';
+			var scrPixelContent = '';
+			if( varCookieSet == true || cookiePresent == "true"){
+				if( varCookieSet == true ){
+					pixelContent = '<img src="https://sync.sharethis.com/vizury?uid=viz_5da58dad5a137" width=1 height=1 />';
+					scrPixelContent = '';
+				}
+				document.getElementById("imageContainer").innerHTML = pixelContent;
+				document.write(scrPixelContent);
+			}
+
+
+			function timeLoadImage(){
+				isLoadCalled = true;
+				var afterLoad = Math.round((new Date()).getTime());
+				var finalLoadTime = (parseInt(afterLoad) - parseInt(beforeLoad))/1000;
+				if(doLog){
+					loggerPixel = loggerPixel + "&time="+finalLoadTime +"&cset="+varCookieSet+"' " + "width=1 height=1 />";
+					document.getElementById("logContainer").innerHTML = loggerPixel
+				}
+			}
+		</script>
+		
+ </body></html>
